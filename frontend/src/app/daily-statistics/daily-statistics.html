@@ -1,0 +1,13 @@
+<h1>Daily electricity statistics</h1>
+<div class="table-container" *ngIf="statistics$ | async as result; else loading">
+    <app-statistics-table [statistics]="result.data "></app-statistics-table>
+</div>
+<div class="paginator-container" *ngIf="statistics$ | async as result">
+    <app-paginator  [totalDays]="result.pagination.totalDays" (pageChange)="onPageChange($event)"></app-paginator>
+</div>
+
+<ng-template #loading>
+  <div class="table-container">
+    <app-statistics-table [statistics]="[]"></app-statistics-table>
+  </div>
+</ng-template>

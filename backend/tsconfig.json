@@ -1,0 +1,15 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "strict": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "esModuleInterop": true,
+    // File Layout
+    // "rootDir": "./src",
+    // "outDir": "./dist",
+  },
+  "exclude": ["src/tests","node_modules", "eslint.config.mts"]
+}

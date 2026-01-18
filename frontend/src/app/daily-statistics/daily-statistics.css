@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+}
+
+
+.table-container {
+    display: flex;             
+    justify-content: center;    
+    padding: 2rem;       
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.paginator-container {
+    display: flex;
+    justify-content: center;
+}
